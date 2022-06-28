@@ -1,16 +1,14 @@
-### Hi there 👋
+```dart
+import 'package:desenvolvedor/tuliogd';
 
-<!--
-**tuliogd/tuliogd** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+class SobreMim extends Desenvolvedor {
+  final String nome = 'Túlio Garcia Diniz';
+  String area = 'Full Stack, especializado em desenvolvimento Mobile com Flutter';
+  String trabalho  = 'DinizSoft';
+  String local = 'Dracena/SP';
+}
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+class Skills extends Desenvolvedor {
+  List<String> linguagens  = ['Dart', 'JS', 'C#', 'C++', 'Delphi', 'PHP'];
+}
+```
