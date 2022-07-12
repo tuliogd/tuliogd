@@ -9,6 +9,6 @@ class SobreMim extends Desenvolvedor {
 }
 
 class Skills extends Desenvolvedor {
-  List<String> linguagens  = ['Dart', 'JS', 'C#', 'C++', 'Delphi', 'PHP'];
+  List<String> linguagens  = ['Dart', 'JS', 'C', 'C#', 'C++', 'Delphi', 'PHP'];
 }
 ```
