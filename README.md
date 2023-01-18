@@ -1,14 +1,43 @@
 ```dart
 import 'package:desenvolvedor/tuliogd';
 
-class SobreMim extends Desenvolvedor {
-  final String nome = 'Túlio Garcia Diniz';
-  String area = 'Full Stack';
-  String trabalho  = 'DinizSoft';
-  String local = 'Dracena/SP';
+void main() {
+  final SobreMim perfil = SobreMim(
+    nome: 'Túlio Garcia Diniz',
+    area: 'Full Stack',
+    trabalho: 'DinizSoft',
+    local: 'Dracena/SP',
+    linguagens: [
+      'Dart',
+      'JS',
+      'TS',
+      'C',
+      'C#',
+      'C++',
+      'Delphi',
+      'PHP',
+    ],
+  );
+
+  print('$perfil');
 }
 
-class Skills extends Desenvolvedor {
-  List<String> linguagens  = ['Dart', 'JS', 'C', 'C#', 'C++', 'Delphi', 'PHP'];
+class SobreMim extends Desenvolvedor {
+  final String nome;
+  final String area;
+  final String trabalho;
+  final String local;
+  final List<String> linguagens;
+  SobreMim({
+    required super.nome,
+    required super.area,
+    required super.trabalho,
+    required super.local,
+    required super.linguagens,
+  });
+
+  @override
+  String toString() => '(nome: $nome, area: $area, trabalho: $trabalho, '
+      'local: $local, linguagens: $linguagens)';
 }
 ```
