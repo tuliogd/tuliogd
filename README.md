@@ -1,8 +1,8 @@
 ```dart
 import 'package:desenvolvedor/tuliogd';
 
-void main() {
-  final SobreMim perfil = SobreMim(
+void main(List<String> args) {
+  final Profile perfil = Profile(
     nome: 'Túlio Garcia Diniz',
     area: 'Full Stack',
     trabalho: 'DinizSoft',
@@ -22,18 +22,18 @@ void main() {
   print('$perfil');
 }
 
-class SobreMim extends Desenvolvedor {
+class Profile {
   final String nome;
   final String area;
   final String trabalho;
   final String local;
   final List<String> linguagens;
   SobreMim({
-    required super.nome,
-    required super.area,
-    required super.trabalho,
-    required super.local,
-    required super.linguagens,
+    required this.nome,
+    required this.area,
+    required this.trabalho,
+    required this.local,
+    required this.linguagens,
   });
 
   @override
