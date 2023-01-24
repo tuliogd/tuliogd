@@ -1,6 +1,4 @@
 ```dart
-import 'package:desenvolvedor/tuliogd';
-
 void main(List<String> args) {
   final Profile perfil = Profile(
     nome: 'Túlio Garcia Diniz',
