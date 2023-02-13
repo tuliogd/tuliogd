@@ -1,23 +1,25 @@
 ```dart
 void main(List<String> args) {
-  final Profile perfil = Profile(
-    nome: 'Túlio Garcia Diniz',
-    area: 'Full Stack',
-    trabalho: 'DinizSoft',
-    local: 'Dracena/SP',
-    linguagens: [
-      'Dart',
-      'JS',
-      'TS',
-      'C',
-      'C#',
-      'C++',
-      'Pascal (Delphi)',
-      'PHP',
-    ],
-  );
+  if (args.first == 'profile') {
+    final Profile perfil = Profile(
+      nome: 'Túlio Garcia Diniz',
+      area: 'Full Stack',
+      trabalho: 'DinizSoft',
+      local: 'Dracena/SP',
+      linguagens: [
+        'Dart',
+        'JS',
+        'TS',
+        'C',
+        'C#',
+        'C++',
+        'Pascal (Delphi)',
+        'PHP',
+      ],
+    );
 
-  print('$perfil');
+    print('$perfil');
+  }
 }
 
 class Profile {
