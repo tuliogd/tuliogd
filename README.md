@@ -1,6 +1,6 @@
 ```dart
 void main(List<String> args) {
-  if (args.first == 'profile') {
+  if (args.isNotEmpty && args.first == 'profile') {
     final Profile perfil = Profile(
       nome: 'Túlio Garcia Diniz',
       area: 'Full Stack',
@@ -19,6 +19,8 @@ void main(List<String> args) {
     );
 
     print('$perfil');
+  } else {
+    print('Argument is required.');
   }
 }
 
@@ -40,4 +42,5 @@ class Profile {
   String toString() => '(nome: $nome, area: $area, trabalho: $trabalho, '
       'local: $local, linguagens: $linguagens)';
 }
+
 ```
