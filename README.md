@@ -12,7 +12,7 @@ void main(List<String> args) {
       'C',
       'C#',
       'C++',
-      'Delphi',
+      'Pascal (Delphi)',
       'PHP',
     ],
   );
@@ -26,7 +26,7 @@ class Profile {
   final String trabalho;
   final String local;
   final List<String> linguagens;
-  SobreMim({
+  Profile({
     required this.nome,
     required this.area,
     required this.trabalho,
