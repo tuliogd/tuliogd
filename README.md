@@ -1,7 +1,7 @@
 ```dart
 void main(List<String> args) {
   if (args.isNotEmpty && args.first == 'profile') {
-    final Profile perfil = Profile(
+    final perfil = Profile(
       nome: 'Túlio Garcia Diniz',
       area: 'Full Stack',
       trabalho: 'DinizSoft',
