@@ -8,8 +8,7 @@ void main(List<String> args) {
       local: 'Dracena/SP',
       linguagens: [
         'Dart',
-        'JS',
-        'TS',
+        'JS/TS',
         'C',
         'C#',
         'C++',
